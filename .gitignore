@@ -1,0 +1,29 @@
+# C stuff
+*.la
+*.so
+*.a
+*.bin
+*.exe
+*.o
+*.lo
+
+# Autotools stuff
+compile
+config.*
+aclocal.m4
+*.in
+m4/
+libtool
+stamp-h1
+test-driver
+install-sh
+depcomp
+configure
+autom4te.cache/
+INSTALL
+Makefile
+ltmain.sh
+missing
+*.deps
+*.libs
+/src/otrd
