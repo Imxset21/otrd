@@ -1,3 +1,7 @@
+2015-02-04  Pedro Rittner <pr273@cornell.edu>
+
+	Added more autoconf configuration for hardening.
+
 2015-01-28  Pedro Rittner  <pr273@cornell.edu>
 
 	Initial commit.
