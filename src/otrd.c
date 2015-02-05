@@ -7,6 +7,7 @@
 #include <assert.h>
 #include <string.h>
 #include <errno.h>
+#include <unistd.h>
 
 //! TODO Remove for production
 #ifndef __clang__
@@ -19,9 +20,10 @@
 
 int main(int argc, char** argv)
 {
+    // No arguments: print out version information
     if (argc == 1)
     {
-        char* name_buff = (char*) calloc(VERSION_STR_SIZE,  sizeof(char));
+        char* name_buff = (char*) calloc(VERSION_STR_SIZE, sizeof(char));
         assert(name_buff != NULL);
         
         if (otrd_get_libotr_version(name_buff, VERSION_STR_SIZE * sizeof(char)))
